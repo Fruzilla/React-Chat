@@ -1,32 +1,86 @@
-.App {
+.App header{
+
+}
+
+.chatContainer{
+  width:100%;
+  height: 87vh;
+  width: 95%;
+  min-height: 500px;
+  text-align: center;
+  margin: 0px;
+
+  border: 5px ridge black;
+  border-radius: 40px;
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap; 
+
+  justify-content: flex-start;    
+  justify-self: center;
+  align-self: center;
+  align-items: flex-start;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.messageContainer{
+  width:59%;
+  height: inherit;
+  min-height: 500px;
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  justify-content: flex-start;    
+  justify-self: center;  
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.App .UserList{
+  align-self: stretch;
+  margin-right: 5%;
+  height: inherit;
+
+  height: 87vh;
+  max-height: 87vh;
+  
+  max-width: 32%;
+  text-align: left;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  border-right: 3px solid #666666;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .UserList li{
+  list-style-type: none;
+  list-style-position: inside;
+  border-bottom: 1px solid #aaaaaa;
+  margin-left: -33px;
+}
+
+.App .MessageList{
+  order: 2;
+  flex-grow:500;
+  text-align: left;
+  align-self: flex-start;
+
+  width:59vw;
+  min-height:300px;
+  max-height:75vh;
+  overflow-y: scroll;
+  overflow-x: auto;
+  
+}
+
+.App .MessageBox{
+  order: 3;
+  text-align: left;
+}
+
+.App .MessageBox input{
+  height:100px;  
+  width: 65vw;
+  max-width: 53vw;
 }

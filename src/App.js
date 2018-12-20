@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 //components
@@ -16,12 +16,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Chat</h1>
+          <h1>React-Chat</h1>
         </header>
         <body>
-          <UserList/>
-          <MessageList/>
-          <MessageBox/>
+          <div class = "chatContainer">
+            <UserList/>
+            <span class = "messageContainer">
+              <MessageList/>
+              <MessageBox/>
+            </span>
+          </div>
         </body>
       </div>
     );
